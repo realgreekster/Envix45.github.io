@@ -1,5 +1,5 @@
 body {
-  background: url('starsbg.gif') repeat;
+  background: url('../public/starsbg.gif') repeat;
   animation: slideDown 60s linear infinite;
   color: #20c9c9;
   font-family: 'Courier New', monospace;
