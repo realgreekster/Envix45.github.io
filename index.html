@@ -1,168 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script defer data-domain="pwnsec.net" src="https://googleisbad.wuemeli.com/js/script.hash.outbound-links.js"></script>
-    <script>window.plausible = window.plausible  function() { (window.plausible.q = window.plausible.q  []).push(arguments) }</script>
-
-    <meta charset="UTF-8">
+    <script defer data-domain="pwnsec.net"
+        src="https://googleisbad.wuemeli.com/js/script.hash.outbound-links.js"></script>
+    <script>
+        window.plausible = window.plausible  function() { (window.plausible.q = window.plausible.q[]).push(arguments) }
+    </script>
+    <meta charset="UTF-8" />
     <title>PWNSEC</title>
-    <style>
-        body {
-            background: url('starsbg.gif') repeat;
-            animation: slideDown 60s linear infinite;
-            color: #20c9c9;
-            font-family: 'Courier New', monospace;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        @keyframes slideDown {
-            from { background-position: 0 0; }
-            to { background-position: 0 100%; }
-        }
-
-        .container {
-            border: 1px solid #1f7070;
-            padding: 2rem;
-            margin-top: 2rem;
-            background: rgba(0, 0, 0, 0.85);
-            position: relative;
-        }
-
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 8px 12px; 
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #1f7070;
-    background: rgba(31, 112, 112, 0.05);
-}
-
-.buttons img {
-    width: 100%;
-    height: 40px;
-    object-fit: contain;
-    padding: 2px;
-    image-rendering: crisp-edges;
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
-    background: rgba(0,0,0,0.3);
-}
-
-.buttons img:hover {
-    transform: scale(1.03);
-    border-color: #1f7070;
-}
-
-        .ascii-art {
-    text-align: center;
-    font-size: 0.7rem;
-    white-space: pre;
-    margin: 50px 0;
-    color: #2eb8b8;
-    text-shadow: 0 0 10px rgba(46, 184, 184, 0.3);
-}
-
-        h2 {
-            border-bottom: 1px solid #1f7070;
-            padding-bottom: 5px;
-            margin-top: 40px;
-            color: #2eb8b8;
-            position: relative;
-        }
-
-        h2:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(90deg, #1f7070 0%, transparent 100%);
-        }
-
-        .staff-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .staff-member {
-            padding: 8px;
-            border: 1px solid #1f7070;
-            background: rgba(31, 112, 112, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .staff-member:hover {
-            background: rgba(31, 112, 112, 0.15);
-            transform: translateX(5px);
-        }
-
-        .owner { color: #d54f4f; border-color: #d54f4f; }
-        .admin { color: #2aa5a5; }
-        .mod { color: #8f8f2a; }
-        .helper { color: #666; }
-
-        a {
-            color: #1f8f8f;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        a:before {
-            content: '»';
-            margin-right: 5px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        a:hover:before {
-            opacity: 1;
-        }
-
-        a:hover {
-            color: #2eb8b8;
-        }
-
-        .links {
-            margin-top: 40px;
-            padding: 20px;
-            border-top: 1px solid #1f7070;
-        }
-
-        p {
-            color: #a0a0a0;
-            font-size: 0.95em;
-            border-left: 3px solid #1f7070;
-            padding-left: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
     <div class="container">
         <div class="ascii-art">
-  ██████╗ ██╗    ██╗███╗   ██╗███████╗███████╗ ██████╗
-  ██╔══██╗██║    ██║████╗  ██║██╔════╝██╔════╝██╔════╝
-  ██████╔╝██║ █╗ ██║██╔██╗ ██║███████╗█████╗  ██║     
-  ██╔═══╝ ██║███╗██║██║╚██╗██║╚════██║██╔══╝  ██║     
-  ██║     ╚███╔███╔╝██║ ╚████║███████║███████╗╚██████╗
-  ╚═╝      ╚══╝╚══╝ ╚═╝  ╚═══╝╚══════╝╚══════╝ ╚═════╝
+            ██████╗ ██╗ ██╗███╗ ██╗███████╗███████╗ ██████╗
+            ██╔══██╗██║ ██║████╗ ██║██╔════╝██╔════╝██╔════╝
+            ██████╔╝██║ █╗ ██║██╔██╗ ██║███████╗█████╗ ██║
+            ██╔═══╝ ██║███╗██║██║╚██╗██║╚════██║██╔══╝ ██║
+            ██║ ╚███╔███╔╝██║ ╚████║███████║███████╗╚██████╗
+            ╚═╝ ╚══╝╚══╝ ╚═╝ ╚═══╝╚══════╝╚══════╝ ╚═════╝
         </div>
         <div class="music-prompt">Click anywhere to play music!</div>
 
         <h2>About Us</h2>
         <p>
-            PWNSEC is a community made up of programmers, hackers, aspiring hackers, and Linux enthusiasts 
-            established in 2022. We like to host web applications, game servers (Minecraft, TF2, etc), discord bots, 
-            and much more!
-            Come be apart of a fun, experienced, lively community!
+            PWNSEC is a community made up of programmers, hackers, aspiring hackers,
+            and Linux enthusiasts established in 2022. We like to host web
+            applications, game servers (Minecraft, TF2, etc), discord bots, and much
+            more! Come be apart of a fun, experienced, lively community!
         </p>
 
         <h2>Staff Team</h2>
@@ -179,131 +46,65 @@
             <div class="staff-member helper">Chip - Helper</div>
         </div>
         <div class="marquee-container">
-    <div class="marquee">
-        <span class="glitch">Hack the Planet! </span>
-        <span class="glitch">Hack the Planet! </span>
-        <span class="glitch">Hack the Planet! </span>
-    </div>
-</div>
-
-<style>
-.marquee-container {
-    position: relative;
-    overflow: hidden;
-    padding: 8px 0;
-    margin: 20px 0;
-    border-top: 1px solid #1f7070;
-    border-bottom: 1px solid #1f7070;
-    background: linear-gradient(90deg, 
-        rgba(32, 201, 201, 0.1) 0%,
-        rgba(32, 201, 201, 0.3) 50%,
-        rgba(32, 201, 201, 0.1) 100%
-    );
-}
-
-.marquee {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 12s linear infinite;
-    font-family: 'Courier New', monospace;
-    font-weight: bold;
-    color: #20c9c9;
-    text-shadow: 0 0 5px rgba(32, 201, 201, 0.3);
-    padding-right: 100%;
-    box-sizing: content-box;
-}
-
-.glitched {
-    position: relative;
-    margin-right: 2em;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(calc(-100% - 4em)); }
-}
-
-.marquee-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.15) 0px,
-        rgba(0, 0, 0, 0.15) 1px,
-        transparent 1px,
-        transparent 2px
-    );
-    pointer-events: none;
-}
-</style>
+            <div class="marquee">
+                <span class="glitch">Hack the Planet! </span>
+                <span class="glitch">Hack the Planet! </span>
+                <span class="glitch">Hack the Planet! </span>
+            </div>
+        </div>
 
         <div class="buttons">
-    <a href="https://pwnsec.net"><img src="images/pwnsec.gif" alt="PWNSEC"></a>
-    <a href="https://cdh8u.vern.cc"><img src="images/bob.gif" alt="Powered by Bob"></a>
-    <a href="https://cdh8u.vern.cc"><img src="images/cdh.gif" alt="CDH8U"></a>
-    <a href="https://www.hiddenweb.xyz/"><img src="images/hiddenweb_button.gif" alt="Hidden Web"></a>
-    <a href="https://bonziworld.org/"><img src="images/warsaw.gif" alt="Bonziworld"></a>
-    <a href="https://web.archive.org/web/19961020032805/http://www.eff.org/blueribbon.html"><img src="images/freespeechforever.gif" alt="Free Speech"></a>
-    <a href="https://2bit.neocities.org/"><img src="images/2bit_button.png" alt="2Bit"></a>
-    <a href="https://geti2p.net/"><img src="images/i2p.gif" alt="I2P"></a>
-    <a href="https://fauux.neocities0;6u.org/"><img src="images/wiredcollectivebutton2.gif" alt="Wired Collective"></a>
-    <a href="https://www.homestuck.com/story/1203"><img src="images/button.png" alt="Homestuck"></a>
-    <a href="https://omnipresence.neocities.org/blog/privacy"><img src="images/omnibutton.gif" alt="Omnibutton"></a>
-    <a href="https://www.thinkwithportals.com/"><img src="images/portal.jpg" alt="Portal"></a>
-    <a href="https://grapheneos.org/"><img src="images/chrmevil.gif" alt="GrapheneOS"></a>
-    <a href="https://www.linuxmint.com/"><img src="images/linux_now.gif" alt="Linux Mint"></a>
-    <a href="https://www.debian.org/"><img src="images/powered-by-debian.gif" alt="Debian"></a>
-    <a href="https://isp.netscape.com/"><img src="images/netscapepower.gif" alt="Netscape"></a>
-    <a href="https://www.proxmox.com/"><img src="images/proxmox.gif" alt="Proxmox"></a>
-    <a href="https://firefox.com/"><img src="images/firefox4.gif" alt="Firefox"></a>
-    <a href="https://web.archive.org/web/20130609133945/https://www.microsoft.com/en-au/download/internet-explorer.aspx"><img src="images/ie4.gif" alt="IE4"></a>
-    <a href="https://store.steampowered.com/app/220/HalfLife_2/"><img src="images/steam.gif" alt="Steam"></a>
-    <a href="https://yesterweb.org/no-to-web3/"><img src="images/roly-saynotoweb3.gif" alt="No Web3"></a>
-    <a href="http://retro.mac84.net/"><img src="images/macmade2.gif" alt="Retro Mac"></a>
-    <a href="https://kernel.org/"><img src="images/penguin.gif" alt="Linux"></a>
-    <a href="https://web.archive.org/web/20140218004033/http://fedoraproject.org/en/get-fedora"><img src="images/poweredbyfedora.gif" alt="Fedora"></a>
-</div>
+            <a href="https://pwnsec.net"><img src="public/pwnsec.gif" alt="PWNSEC" /></a>
+            <a href="https://cdh8u.vern.cc"><img src="public/bob.gif" alt="Powered by Bob" /></a>
+            <a href="https://cdh8u.vern.cc"><img src="public/cdh.gif" alt="CDH8U" /></a>
+            <a href="https://www.hiddenweb.xyz/"><img src="public/hiddenweb_button.gif" alt="Hidden Web" /></a>
+            <a href="https://bonziworld.org/"><img src="public/warsaw.gif" alt="Bonziworld" /></a>
+            <a href="https://web.archive.org/web/19961020032805/http://www.eff.org/blueribbon.html"><img
+                    src="public/freespeechforever.gif" alt="Free Speech" /></a>
+            <a href="https://2bit.neocities.org/"><img src="public/2bit_button.png" alt="2Bit" /></a>
+            <a href="https://geti2p.net/"><img src="public/i2p.gif" alt="I2P" /></a>
+            <a href="https://fauux.neocities0;6u.org/"><img src="public/wiredcollectivebutton2.gif"
+                    alt="Wired Collective" /></a>
+            <a href="https://www.homestuck.com/story/1203"><img src="public/button.png" alt="Homestuck" /></a>
+            <a href="https://omnipresence.neocities.org/blog/privacy"><img src="public/omnibutton.gif"
+                    alt="Omnibutton" /></a>
+            <a href="https://www.thinkwithportals.com/"><img src="public/portal.jpg" alt="Portal" /></a>
+            <a href="https://grapheneos.org/"><img src="public/chrmevil.gif" alt="GrapheneOS" /></a>
+            <a href="https://www.linuxmint.com/"><img src="public/linux_now.gif" alt="Linux Mint" /></a>
+            <a href="https://www.debian.org/"><img src="public/powered-by-debian.gif" alt="Debian" /></a>
+            <a href="https://isp.netscape.com/"><img src="public/netscapepower.gif" alt="Netscape" /></a>
+            <a href="https://www.proxmox.com/"><img src="public/proxmox.gif" alt="Proxmox" /></a>
+            <a href="https://firefox.com/"><img src="public/firefox4.gif" alt="Firefox" /></a>
+            <a
+                href="https://web.archive.org/web/20130609133945/https://www.microsoft.com/en-au/download/internet-explorer.aspx"><img
+                    src="public/ie4.gif" alt="IE4" /></a>
+            <a href="https://store.steampowered.com/app/220/HalfLife_2/"><img src="public/steam.gif" alt="Steam" /></a>
+            <a href="https://yesterweb.org/no-to-web3/"><img src="public/roly-saynotoweb3.gif" alt="No Web3" /></a>
+            <a href="http://retro.mac84.net/"><img src="public/macmade2.gif" alt="Retro Mac" /></a>
+            <a href="https://kernel.org/"><img src="public/penguin.gif" alt="Linux" /></a>
+            <a href="https://web.archive.org/web/20140218004033/http://fedoraproject.org/en/get-fedora"><img
+                    src="public/poweredbyfedora.gif" alt="Fedora" /></a>
+        </div>
 
         <div class="links">
             <h2>Resources</h2>
-            <p><a href="https://discord.gg/pwnsec" target="_blank">Community Discord</a></p>
-            <p><a href="https://fakecrime.bio/envixity" target="_blank">Envixity's Bio</a></p>
+            <p>
+                <a href="https://discord.gg/pwnsec" target="_blank">Community Discord</a>
+            </p>
+            <p>
+                <a href="https://fakecrime.bio/envixity" target="_blank">Envixity's Bio</a>
+            </p>
             <p><a href="https://wuemeli.com" target="_blank">Wuemeli's Bio</a></p>
-            <p><a href="https://cdh8u.vern.cc" target="_blank">Greekster's Bio</a></p>
+            <p>
+                <a href="https://cdh8u.vern.cc" target="_blank">Greekster's Bio</a>
+            </p>
         </div>
     </div>
 </body>
 <audio id="bgMusic" loop>
-  <source src="assets/prototypek.mp3" type="audio/mpeg">
+    <source src="assets/prototypek.mp3" type="audio/mpeg" />
 </audio>
 
-<script>
-document.addEventListener('click', function() {
-  const music = document.getElementById('bgMusic');
-  music.play().catch(() => {});
-  document.querySelector('.music-prompt').style.display = 'none';
-});
-</script>
+<script src="assets/script.js"></script>
 
-<style>
-.music-prompt {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #1f7070;
-  margin: -30px 0 40px;
-  animation: glitch-pulse 2s infinite;
-  text-shadow: 0 0 5px rgba(31, 112, 112, 0.3);
-}
-
-@keyframes glitch-pulse {
-  0%, 100% { opacity: 0.7; }
-  50% { opacity: 0.4; }
-}
-
-audio { display: none; }
-</style>
 </html>
